@@ -1,0 +1,60 @@
+/* Style for the list of violations */
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+  
+  /* Checkbox container */
+  li label {
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 15px;
+  }
+  
+  li label:hover {
+    background-color: #e8f0fe;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styled checkbox */
+  li label input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  
+  li label input[type="checkbox"]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  li label input[type="checkbox"]:checked::before {
+    content: "✔";
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  li label input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 3px #007bff;
+  }
+  

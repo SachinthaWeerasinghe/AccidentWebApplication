@@ -1,0 +1,95 @@
+/* General styles for the app */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for the predicted law violations section */
+  h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style each violation list item */
+  li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  strong {
+    font-size: 16px;
+    color: #2c3e50;
+  }
+  
+  /* Style for the sub-violations checkbox section */
+  ul ul {
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #0f1010;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Selected violations section */
+  .selected-violations {
+    margin-top: 30px;
+  }
+  
+  .selected-violations h3 {
+    color: #333;
+  }
+  
+  .selected-violations ul {
+    padding-left: 15px;
+  }
+  
+  .selected-violations li {
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #00796b;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    li {
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+  
+    strong {
+      font-size: 14px;
+    }
+  
+    label {
+      font-size: 12px;
+    }
+  
+    .selected-violations li {
+      font-size: 13px;
+    }
+  }
+  
